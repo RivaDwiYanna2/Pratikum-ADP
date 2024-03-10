@@ -1,0 +1,25 @@
+Program Menghitung_Luas_Permukaan_Balok;
+uses crt;
+Var
+        p,l,t,luas : real;
+Begin
+clrscr;
+        Writeln ('Tugas Modul 1');
+        Writeln ('Nama = Riva Dwi Yanna');
+        Writeln ('NIM = 2310432018');
+        Writeln ('Shift = 1');
+        Readln;
+
+        Writeln ('Ket. semua nilai dalam satuan cm');
+        Readln;
+        Write ('Masukkan Nilai Panjang = ');
+        Readln (p);
+        Write ('Masukkan Nilai Lebar = ');
+        Readln (l);
+        Write ('Masukkan Nilai Tinggi = ');
+        Readln (t);
+        Luas := 2*((p*l)+(p*t)+(l*t));
+        Writeln ('Luas Permukaan Balok = ' , Luas:2:2);
+        Readln;
+End.
+
