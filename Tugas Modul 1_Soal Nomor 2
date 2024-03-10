@@ -1,0 +1,32 @@
+Program Menghitung_Volume_Bola;
+uses crt;
+Var
+        Nama : string;
+        NIM, phi,r,volume: real;  Shift :integer;
+Begin
+clrscr;
+        Writeln ('Tugas Modul 1');
+        Nama:= 'Riva Dwi Yanna';
+        Writeln ('Nama = ', Nama);
+        NIM := 2310432018;
+        Writeln ('NIM = ', NIM:0:0);
+        Shift := 1;
+        Writeln ('Shift = ', Shift);
+        Readln;
+
+        Writeln ('Ket. semua nilai dalam satuan cm');
+        Readln;
+        phi := 3.14;
+        Writeln ('phi = ', phi:2:2);
+        Write ('Masukkan jari_jari = ');
+        Readln (r);
+        Volume := 4/3*phi*r*r*r;
+        Writeln ('Volume Bola = ', Volume:2:2);
+        Readln;
+End.
+
+
+
+
+
+
