@@ -1,0 +1,105 @@
+print ('Selamat Datang di Kafe Math')
+print ('------------------------------------')
+Nama = str (input ('Masukkan Nama Anda : '))
+NIM = float (input ('Masukkan NIM Anda : '))
+print ('------------------------------------')
+
+
+print ('Jenis Pesanan')
+Pilihan = ('1. Makanan')
+print (Pilihan)
+Pilihan = ('2. Minuman')  
+print (Pilihan)        
+Pilihan = ('3. Makanan & Minuman')
+print (Pilihan)
+Pilihan = (input ('Pilihan (1/2/3) : '))
+
+
+if  (Pilihan == '1') :
+    print ('''
+           Menu yang Tersedia :''')
+    print ('''
+    1. Bakso                     Harga : 13000
+    2. Nasi Goreng               Harga : 15000
+    3. Mie Ayam                  Harga : 15000
+           ''')
+    Pesanan = (input ('Makanan yang dipesan (1/2/3): '))
+    Jumlah_Pesanan = int (input ('Jumlah Pesanan : '))
+    if Pesanan == '1' :
+            Menu_Pilihan = 'Bakso'
+            Total_Harga = (13000*Jumlah_Pesanan)
+    elif Pesanan == '2':
+            Menu_Pilihan = 'Nasi Goreng'
+            Total_Harga = (15000*Jumlah_Pesanan)
+    elif Pesanan == '3':
+            Menu_Pilihan = 'Mie Ayam'
+            Total_Harga = (15000*Jumlah_Pesanan)
+    else:
+            Menu_Pilihan = 'Menu Tidak Tersedia'
+            Total_Harga = '-'
+
+
+elif (Pilihan == '2' ) :
+    print ('''
+            Menu yang Tersedia :''')
+    print ('''
+    1. Jus Mangga                Harga : 10000
+    2. Teh Es                    Harga : 5000
+    3. Air Mineral               Harga : 5000
+            ''')
+    Pesanan = (input ('Minuman yang dipesan (1/2/3): '))
+    Jumlah_Pesanan = int (input ('Jumlah Pesanan : '))
+    if Pesanan == '1' :
+            Menu_Pilihan = 'Jus Mangga'
+            Total_Harga = (10000*Jumlah_Pesanan)
+    elif Pesanan == '2':
+            Menu_Pilihan = 'Teh Es'
+            Total_Harga = (5000*Jumlah_Pesanan)
+    elif Pesanan == '3':
+            Menu_Pilihan = 'Air Mineral'
+            Total_Harga = (5000*Jumlah_Pesanan)
+    else:
+            Menu_Pilihan = 'Menu Tidak Tersedia'
+            Total_Harga = '-'
+
+
+elif (Pilihan == '3' ): 
+    print ('''
+            Menu yang Tersedia :''')
+    print ('''
+    1. Bakso + Teh Es            Harga : 17000
+    2. Nasi Goreng + Teh Es      Harga : 18000
+    3. Mie Ayam + Teh Es         Harga : 18000
+            ''')
+    Pesanan = (input ('Makanan & Minuman yang dipesan (1/2/3): '))
+    Jumlah_Pesanan = int (input ('Jumlah Pesanan : '))
+    if Pesanan == '1' :
+            Menu_Pilihan = 'Bakso + Teh Es'
+            Total_Harga = (17000*Jumlah_Pesanan)
+    elif Pesanan == '2':
+            Menu_Pilihan = 'Nasi Goreng + Teh Es'
+            Total_Harga = (18000*Jumlah_Pesanan)
+    elif Pesanan == '3':
+            Menu_Pilihan = 'Mie Ayam + Teh Es'
+            Total_Harga = (18000*Jumlah_Pesanan)
+    else:
+            Menu_Pilihan = 'Menu Tidak Tersedia'
+            Total_Harga = '-'
+
+
+else :
+    print ('Kode Pesanan Tidak Valid')
+    Menu_Pilihan = 'Menu Tidak Tersedia'
+    Jumlah_Pesanan = '-'
+    Total_Harga = '-'
+
+
+print ('------------------------------------')
+print ('Daftar Pesanan Anda')
+print ('------------------------------------')
+print ('Menu Pilihan   : ', Menu_Pilihan)
+print ('Jumlah Pesanan : ', Jumlah_Pesanan)
+print ('Total Harga    : ', Total_Harga)
+print ('------------------------------------')
+print ('Terimakasih Telah Berkunjung')
+print ('------------------------------------')  
