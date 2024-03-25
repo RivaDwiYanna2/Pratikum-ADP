@@ -1,0 +1,67 @@
+print ('Nama : Riva Dwi Yanna')
+print ('NIM : 2310432018')
+print ('Tugas 3 Praktikum ADP')
+print ('-----------------------------------')
+
+n = int (input ('Input n = '))
+while (1<=n<=10):
+    print ('''
+        MENU''')
+    Pilihan = ('1. Tabel Perkalian n x n')
+    print (Pilihan)
+    Pilihan = ('2. Tabel Penjumlahan n x n')
+    print (Pilihan)
+    Pilihan = ('3. Keluar')
+    print (Pilihan)
+    Pilihan = (input ('Masukkan Pilihan (1/2/3) : '))
+    if (Pilihan == '1'):
+        print ('''
+               Tabel Perkalian n x n''')
+        for i in range (1,n+1):   
+            for k in range (1, n+1):  
+                print (i*k, end = '        ' '|')   
+            print ()
+            print ('____________________________________________________')  
+    elif (Pilihan == '2'):
+        print ('''
+               Tabel Perjumlahan n x n''')
+        for i in range (0,n+1):
+            for k in range (0, n+1):
+                print (i+k, end = '        ' '|')
+            print ()
+            print ('____________________________________________________ ')  
+    elif (Pilihan == '3'):
+        break
+    else  :
+        print ('''
+               Input Ulang Menu ''')
+ 
+else :
+    n = int (input ('Input Ulang n (1-10)= '))
+    while (1<=n<=10):
+            print ('''
+            MENU''')
+            Pilihan = ('1. Tabel Perkalian n x n')
+            print (Pilihan)
+            Pilihan = ('2. Tabel Penjumlahan n x n')
+            print (Pilihan)
+            Pilihan = ('3. Keluar')
+            print (Pilihan)
+            Pilihan = (input ('Masukkan Pilihan (1/2/3) : '))
+            if (Pilihan == '1'):
+                for i in range (1,n+1):   
+                    for k in range (1, n+1):  
+                        print (i*k, end = '        ')
+                    print ()
+            elif (Pilihan == '2'):
+                for i in range (0,n+1):
+                    for k in range (0, n+1):
+                        print (i+k, end = '        ')
+                    print ()
+            elif (Pilihan == '3'):
+                break
+            else  :
+                print ('''
+                    Input Ulang Menu ''')
+
+        
