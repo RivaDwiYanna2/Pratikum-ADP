@@ -1,0 +1,21 @@
+print ('Nama  : Riva Dwi Yanna')
+print ('NIM   : 2310432018')
+print ('Shift : 1')
+print ('Tugas Modul 4')
+print ('--------------------------------')
+
+Jumlah_Faktor  = 0
+n = int (input ('Masukkan bilangan bulat positif: '))
+for i in range (1,n):
+    if n % i ==0:
+        Jumlah_Faktor +=i
+
+if Jumlah_Faktor == n:
+        print (n , 'adalah bilangan sempurna.')
+else :
+        print (n , 'bukan bilangan sempurna.')
+
+if n % 2 == 0:
+        print (n, 'adalah bilangan genap.')
+else :
+        print (n, 'adalah bilangan ganjil.')
