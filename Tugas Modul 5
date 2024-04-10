@@ -1,0 +1,21 @@
+print ('Nama : Riva Dwi Yanna')
+print ('NIM : 2310432018')
+print ('Tugas Modul 5')
+print ('_______________________________')
+
+print ('Teknik Caesar Cipher')
+print ('-------------------------------')
+
+huruf = 'abcdefghijklmnopqrstuvwxyz'
+enkripsi = ''
+k = int(input("Masukkan nilai k (dari 1 hingga 26): "))
+teks = input("Masukkan teks yang ingin dienkripsi: ")
+teks_satu = teks.lower()
+for i in teks_satu :
+            if i in huruf :
+                j= huruf. find (i)
+                m = (j + k) % 26
+                enkripsi = enkripsi + huruf [m]
+            else :
+                enkripsi = enkripsi + i
+print ('Hasil enkripsi =', enkripsi.lower())
