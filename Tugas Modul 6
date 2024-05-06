@@ -1,0 +1,41 @@
+print ('Nama : Riva Dwi Yanna')
+print ('NIM : 2310432018')
+print ('Shift : 1')
+print ('----------------------------')
+print ('Tugas Modul 6')
+print ('----------------------------')
+
+print ('<<< SELAMAT DATANG DI BANDARA X >>>')
+print ('\nBerikut Jadwal Penerbangan pada Tanggal 05 Mei 2024')
+
+print ('________________________________________________________________________________')
+print('|Rute|', '\tKota Asal |', '\tKota Tujuan      |', 'Waktu Keberangkatan|', 'Waktu Kedatangan|') 
+print ('________________________________________________________________________________')
+Jadwal_Penerbangan = [["| 1  |", "\tJakarta   |", "\tBanjarmasin      |", "\t12.15         |", "\t14.55   |"],
+                      ["| 2  |", "\tJakarta   |", "\tBatam            |", "\t05.35         |", "\t07.15   |"],
+                      ["| 3  |", "\tSurabaya  |", "\tBanjarmasin      |", "\t07.10         |", "\t09.15   |"],
+                      ["| 4  |", "\tSurabaya  |", "\tBatam            |", "\t18.35         |", "\t20.50   |"]
+                      ]
+
+for i in range (4):
+    for j in range (5):
+        print (Jadwal_Penerbangan [i][j], end= " ")
+    print ()
+print ('________________________________________________________________________________')
+
+print ('\nMenentukan Rute Tercepat antara Dua Buah Rute di Atas')
+rute_a = int (input ('Rute A = Rute ke-'))
+rute_b = int (input ('Rute B = Rute ke-'))
+
+if rute_a == 1 and rute_b == 2 :
+    print ('Rute tercepat adalah rute ke-',rute_b,', yaitu dari Jakarta ke Batam dengan waktu tempuh 1 jam 40 menit.') 
+elif rute_a == 1 and rute_b ==  3:
+    print ('Rute tercepat adalah rute ke-',rute_b,', yaitu dari Surabaya ke Banjarmasin dengan waktu tempuh 2 jam 5 menit.')
+elif rute_a == 1 and rute_b == 4 :
+    print ('Rute tercepat adalah rute ke-',rute_b,', yaitu dari Surabaya ke Batam dengan waktu tempuh 2 jam 15 menit.')
+elif rute_a == 2 and rute_b == 3 :
+    print ('Rute tercepat adalah rute ke-',rute_a,', yaitu dari Jakarta ke Batam dengan waktu tempuh 1 jam 40 menit.')
+elif rute_a == 2 and rute_b == 4 :
+    print ('Rute tercepat adalah rute ke-',rute_a,', yaitu dari Jakarta ke Batam dengan waktu tempuh 1 jam 40 menit.')
+elif rute_a == 3 and rute_b == 4 :
+    print ('Rute tercepat adalah rute ke-',rute_a,', yaitu dari Surabaya ke Banjarmasin dengan waktu tempuh 2 jam 5 menit.')
