@@ -1,0 +1,66 @@
+print ('Nama : Riva Dwi Yanna')
+print ('NIM : 2310432018')
+print ('Shift : 1')
+print ('Tugas Modul 8')
+print ('---------------------------')
+
+def menyimpan(nama, umur, jenis_kelamin, golongan_darah, riwayat_penyakit, daftar_obat):
+    with open('data_pasien.txt', 'a') as file:
+        file.write (f"{nama}, {umur}, {jenis_kelamin}, {golongan_darah}, {riwayat_penyakit}, {daftar_obat}\n")
+    print ('\nData Berhasil Disimpan\n')
+
+def menghapus(nama, umur, jenis_kelamin, golongan_darah, riwayat_penyakit, daftar_obat):
+    with open('data_pasien.txt', 'r') as file:
+        line = file.readlines()
+    with open ('data_pasien.txt', 'w') as file:
+        file.write(' ')
+    print ('Data Berhasil Dihapus')
+
+def tampilkan(nama, umur, jenis_kelamin, golongan_darah, riwayat_penyakit, daftar_obat):
+    with open('data_pasien.txt', 'r') as file:
+        for line in file:
+            print('Berikut data-data pasien.')
+            data = line.strip().split(', ')
+            data_pasien = {
+                            'Nama'              : data[0],
+                            'Umur'              : data[1],
+                            'Jenis Kelamin'     : data[2],
+                            'Golongan Darah'    : data[3],
+                            'Riwayat Penyakit'  : data[4],
+                            'Daftar Obat'       : data[5]
+                            }
+            for key,value in data_pasien.items():
+                print (f"{key:<18}:{value:<18}")
+            print ()
+
+while True:
+    print('''
+          PILIHAN''')
+    Pilihan = ('1. Simpan Data Pasien')
+    print (Pilihan)
+    Pilihan = ('2. Hapus Data Pasien')
+    print (Pilihan)
+    Pilihan = ('3. Tampilkan Data Pasien')
+    print (Pilihan)
+    Pilihan = ('4. Keluar')
+    print (Pilihan)
+    Pilihan = input('Masukkan Pilihan (1/2/3/4): ')
+
+    if Pilihan == '1':
+        nama = input('Nama : ')
+        umur = input('Umur : ')
+        jenis_kelamin = input('Jenis Kelamin : ')
+        golongan_darah = input('Golongan Darah : ')
+        riwayat_penyakit = input('Riwayat Penyakit : ')
+        daftar_obat = input('Daftar Obat : ')
+        menyimpan(nama, umur, jenis_kelamin, golongan_darah, riwayat_penyakit, daftar_obat)
+    elif Pilihan == '2':
+        menghapus(nama, umur, jenis_kelamin, golongan_darah, riwayat_penyakit, daftar_obat)
+    elif Pilihan == '3':
+        tampilkan(nama, umur, jenis_kelamin, golongan_darah, riwayat_penyakit, daftar_obat)
+    elif Pilihan == '4':
+        break
+    else:
+        print('Pilihan tidak tersedia. Silakan masukkan angka 1, 2, 3, atau 4.')
+
+    
