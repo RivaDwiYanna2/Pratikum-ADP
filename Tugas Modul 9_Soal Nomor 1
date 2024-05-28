@@ -1,0 +1,22 @@
+import os
+import time
+os.system('cls')
+
+print ('Nama : Riva Dwi Yanna')
+print ('NIM : 2310432018')
+print ('Shift : 1')
+print ('Tugas Modul 9')
+print ('---------------------------')
+
+time.sleep(1)
+os.system('cls')
+
+print ('Berikut adalah gambar bendera negara Indonesia.')
+print('\n')
+
+from termcolor import colored, cprint
+
+for i in range (5):
+    cprint(' '*50, 'white', 'on_red')
+for i in range (5):
+    cprint(' '*50, 'white', 'on_white')
